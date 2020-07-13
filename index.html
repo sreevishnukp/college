@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tables</title>
+	<style type="text/css">
+		body{
+        	 height: 1000px;
+             width: 710px;
+             margin-left: auto;
+             margin-right: auto;
+             font-family: serif;                                     
+        }
+        div{
+        	word-spacing:2px;
+        	line-height: 1.6;
+        	text-align: justify;
+        	font-size:17px;
+        }
+        .table{
+        	border:solid black;
+			border-collapse: collapse;
+			border-width: 2px;
+
+        }
+        #td1{
+        	border:solid black;
+			border-collapse: collapse;
+			border-width: 2px;
+		}
+
+        #td2{
+        	border:solid black;
+			border-collapse: collapse;
+			border-width: 2px;
+			text-align:right;
+			width:30%; 
+
+        }
+        #td3{
+        	border:solid black;
+			border-collapse: collapse;
+			border-width: 2px;
+			text-align:left;
+			width:40%;
+		}
+		#th{
+			border:solid black;
+			border-collapse: collapse;
+			border-width: 2px;
+			text-align: left;
+		}
+		span{
+			font-size: 17px;
+		}	
+		.size{
+			font-size: 27px;
+		}
+		.table1{
+			border:solid forestgreen;
+			border-collapse: collapse;
+			border-width: 4px;
+			width:550px;
+            height:150px;
+            font-size: 16px;
+		}
+
+		#th1{
+			border:solid forestgreen;
+			border-collapse: collapse;
+			border-width: 4px;
+		}
+		#td6{
+            border:solid forestgreen;
+			border-collapse: collapse;
+			border-width: 4px;
+
+		}
+		.table2{
+			width: 600px;
+            font-size: 16px;
+            border-collapse: collapse;
+
+		}
+		th {
+  			border-bottom: 1px solid ;
+  					}
+		#td5{
+			border-bottom: 1px solid ;
+  			
+		}
+
+	</style>
+</head>
+<body><center> TABLES </center><br><center><span>
+	<table class="table">
+		<tr>
+			<td id="td1">&nbsp;&nbsp;FKANSCS001&nbsp;&nbsp;</td>
+			<td id="td2">254&nbsp;</td>
+			<td id="td3">&nbsp;ADHILA P M </td>
+		</tr>
+		<tr>
+			<td id="td1">&nbsp;&nbsp;FKANSCS002&nbsp;&nbsp;</td>
+			<td id="td2">255&nbsp;</td>
+			<td id="td3">&nbsp;ATHIKA K</td>
+		</tr>
+		<tr>
+			<td id="td1">&nbsp;&nbsp;FKANSCS003&nbsp;&nbsp;</td>
+			<td id="td2">257&nbsp;</td>
+			<td id="td3">&nbsp;DILSHA T</td>
+		</tr>
+	</table></span>
+</center><br><br><div>
+Tables can be created in HTML using <b>&lt;table&gt;</b> tag. Row and columns of the table are specified
+using <b>&lt;row&gt;</b> and <b>&lt;col&gt;</b> elements. You can prepare simple table to represent the timings of the
+above image.
+<br><b class="size">Giving Heading, Borders, Caption and Width of Table and
+Cells</b></div><center> List of students-BSc 2013-16<br><br></center><center><span>
+	<table class="table">
+		<tr>
+			<th id="th">&nbsp;Reg No&nbsp;</th>
+			<th id="th">&nbsp;Roll No&nbsp;</th>
+			<th id="th">&nbsp;Name</th>
+		</tr>
+		<tr>
+			<td id="td1">&nbsp;&nbsp;FKANSCS001&nbsp;&nbsp;</td>
+			<td id="td2">254&nbsp;</td>
+			<td id="td3">&nbsp;ADHILA P M </td>
+		</tr>
+		<tr>
+			<td id="td1">&nbsp;&nbsp;FKANSCS002&nbsp;&nbsp;</td>
+			<td id="td2">255&nbsp;</td>
+			<td id="td3">&nbsp;ATHIKA K</td>
+		</tr>
+		<tr>
+			<td id="td1">&nbsp;&nbsp;FKANSCS003&nbsp;&nbsp;</td>
+			<td id="td2">257&nbsp;</td>
+			<td id="td3">&nbsp;DILSHA T</td>
+		</tr>
+	</table></span>
+</center>
+<div>When you created the first table, table was displayed in the default attributes. Table can be
+further customized. Now you know how to add headings, caption, put borders and fixing width
+for each cells (you may set 40% of the total width for the Reg No and 50% for Name and the rest
+for the Roll No. also the width of the entire table may be fixed as 50%).</div><br>
+<b class="size">Row Spanning and Column Spanning</b><br><br>
+<div>Rows and column can be merged for our convenience. A sample table is as shown below. In
+addition to this, background colors of cells are also customized.</div><br>
+<center><b style="font-size: 27px; color: red;">List of UG Students – 2013 -16</b></center><br>
+<center><table class="table1">
+	<tr>
+		<th id="th1" colspan="4">Department of computer science</th>
+    </tr>
+    <tr>
+		<th id="th1" colspan="4">Farook college</th>
+    </tr>
+    <tr>
+		<th id="th1" align="left">&nbsp;Course</th>
+		<th id="th1" align="left">&nbsp;Reg No</th>
+		<th id="th1" align="left">&nbsp;Roll No</th>
+		<th id="th1" align="left">&nbsp;Name</th>
+    </tr>
+    <tr>
+  		<td id="td6" rowspan="3" style="background-color:lightskyblue">&nbsp;Computer science</td>
+  		<td id="td6" style="background-color: lightskyblue">&nbsp;FKANSCS001</td>
+  		<td id="td6" style="background-color: lightskyblue" align="right">254&nbsp;</td>
+  		<td id="td6" style="background-color: lightskyblue">&nbsp;ADHILA P M</td>
+ 	</tr>
+ 	<tr>
+  		
+  		<td id="td6" >&nbsp;FKANSCS002</tdid="td6" >
+  		<td id="td6" align="right">255&nbsp;</td>
+  		<td id="td6" >&nbsp;ATHIKA K</td>
+ 	</tr>
+ 	<tr>
+  		
+  		<td id="td6" style="background-color: lightskyblue">&nbsp;FKANSCS003</td>
+  		<td id="td6" style="background-color: lightskyblue" align="right">257&nbsp;</td>
+  		<td id="td6" style="background-color: lightskyblue">&nbsp;DILSHA T</td>
+ 	</tr>
+ 	<tr>
+  		<td id="td6" rowspan="3" style="background-color: yellowgreen">&nbsp;Physics</td>
+  		<td id="td6" style="background-color: yellowgreen">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  		<td id="td6" style="background-color: yellowgreen" align="right">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  		<td id="td6" style="background-color: yellowgreen">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+ 	</tr>
+ 	<tr>
+  		
+  		<td id="td6" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  		<td id="td6" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  		<td id="td6" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+ 	</tr>
+ 	<tr>
+  		
+  		<td id="td6" style="background-color: yellowgreen">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  		<td id="td6"  style="background-color: yellowgreen" >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  		<td id="td6" style="background-color: yellowgreen">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+ 	</tr>
+
+ 	
+</table></center><br>
+Customized Borders – rules Attribute<br><br>
+<center>
+<table class="table2">
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+
+	</tr>
+	<tr>
+		<th align="left" rowspan="2" style="vertical-align: text-top;">Sl No</th>
+		<th align="left" rowspan="2" style="vertical-align: text-top;"">Course</th>
+		<th colspan="2">Strength</th>
+		<th></th>
+
+	</tr>
+	<tr>
+		
+		<th align="center">Boys</th>
+		<th align="center">Girls</th>
+
+	</tr>
+	<tr>
+		<td id="td5" align="left">1</td>
+		<td id="td5" align="left">Bsc Compter Science</td>
+		<td id="td5" align="right">10</td>
+		<td id="td5" align="right">20</td>		
+	</tr>
+	<tr>
+		<td id="td5" align="left">2</td>
+		<td id="td5" align="left">Bsc Physics</td>
+		<td id="td5" align="right">25</td>
+		<td id="td5" align="right">5</td>		
+	</tr>
+	<tr>
+		<td id="td5" align="left">3</td>
+		<td id="td5" align="left">Bsc Zoology</td>
+		<td id="td5" align="right">0</td>
+		<td id="td5" align="right">30</td>		
+	</tr>
+	
+</table>
+</center>
+<br><div>“rules” attribute can be used to specify the border lines selectively – for the entire table, rows or
+columns. Further customizations are possible for tables.</div>
+</body>
+</html>

@@ -6,6 +6,7 @@ h6{
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  font-color: red;
 }
 h5{
   display: block;
@@ -15,6 +16,7 @@ h5{
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  font-color:green;
 }
 h4{
   display: block;
@@ -24,6 +26,7 @@ h4{
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  font-color:blue;
 }
 h3{
   display: block;
